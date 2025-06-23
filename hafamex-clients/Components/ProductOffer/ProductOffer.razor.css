@@ -1,0 +1,272 @@
+.about-company {
+  height: 100vh;
+  margin-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .section-title {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 58px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #b80a25;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+
+  .product-categories {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a{
+      text-decoration: none;
+    }
+    .category-card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      padding: 10px 10px;
+      width: 300px;
+      height: 400px;
+      text-align: center;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      img {
+        border-radius: 16px;
+        width: 280px;
+        height: 200px;
+        object-fit: contain;
+        /* margin-bottom: 20px; */
+      }
+
+      h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #b80a25;
+        font-family: "Poppins", sans-serif;
+      }
+
+      p {
+        font-size: 16px;
+        color: #6b7280;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .about-company {
+    .section-title {
+      font-size: 48px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+    }
+
+    .product-categories {
+      gap: 40px;
+
+      .category-card {
+        width: 280px;
+        height: 380px;
+
+        img {
+          width: 260px;
+          height: 180px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-company {
+    margin-top: 80px;
+    height: auto;
+    padding: 40px 20px;
+
+    .section-title {
+      font-size: 42px;
+    }
+
+    .section-subtitle {
+      font-size: 15px;
+      max-width: 90%;
+    }
+
+    .product-categories {
+      gap: 30px;
+
+      .category-card {
+        width: 260px;
+        height: 360px;
+
+        img {
+          width: 240px;
+          height: 160px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-company {
+    .section-title {
+      font-size: 36px;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+    }
+
+    .product-categories {
+      gap: 25px;
+
+      .category-card {
+        width: 240px;
+        height: 340px;
+
+        img {
+          width: 220px;
+          height: 150px;
+        }
+
+        h3 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about-company {
+    .section-title {
+      font-size: 30px;
+    }
+
+    .section-subtitle {
+      font-size: 13px;
+    }
+
+    .product-categories {
+      gap: 20px;
+
+      .category-card {
+        width: 90%;
+        height: auto;
+        padding: 20px 10px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .about-company {
+    .section-title {
+      font-size: 26px;
+    }
+
+    .section-subtitle {
+      font-size: 12px;
+    }
+
+    .product-categories {
+      gap: 16px;
+
+      .category-card {
+        width: 100%;
+        padding: 15px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .about-company {
+    .section-title {
+      font-size: 64px;
+    }
+
+    .section-subtitle {
+      font-size: 20px;
+      max-width: 800px;
+    }
+
+    .product-categories {
+      gap: 60px;
+
+      .category-card {
+        width: 320px;
+        height: 440px;
+
+        img {
+          width: 300px;
+          height: 210px;
+        }
+
+        h3 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@page "/product"
+@inject NavigationManager NavigationManager
+@using hafamex_clients.Components.Certificate
+@using hafamex_clients.Components.ProductHeader_razor
+@using hafamex_clients.Components.ProductBanner
+@using hafamex_clients.Components.ProductOffer
+@using hafamex_clients.Components.ProductTopSeller
+
+
+<ProductBanner />
+<ProductOffer />
+<Certificate />
+<ProductTopSeller />
+
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        StateHasChanged();
+    }
+}

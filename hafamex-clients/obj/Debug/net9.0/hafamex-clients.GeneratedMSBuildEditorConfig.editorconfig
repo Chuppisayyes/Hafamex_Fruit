@@ -1,0 +1,157 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = hafamex-clients
+build_property.RootNamespace = hafamex-clients
+build_property.ProjectDir = E:\Source\hafamex-clients\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Source\hafamex-clients
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[E:/Source/hafamex-clients/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Source/hafamex-clients/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Source/hafamex-clients/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Source/hafamex-clients/Components/AlbumHome/AlbumHome.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBbGJ1bUhvbWVcQWxidW1Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-da0rlh99xo
+
+[E:/Source/hafamex-clients/Components/CarouselPlayer/CarouselPlayer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJvdXNlbFBsYXllclxDYXJvdXNlbFBsYXllci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-pbagp4rr31
+
+[E:/Source/hafamex-clients/Components/Carousel/Carousel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJvdXNlbFxDYXJvdXNlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-5vhxcmij76
+
+[E:/Source/hafamex-clients/Components/Certificate/Certificate.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDZXJ0aWZpY2F0ZVxDZXJ0aWZpY2F0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-sm7p8vbuvv
+
+[E:/Source/hafamex-clients/Components/FactoryAndFarm/FactoryAndFarm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGYWN0b3J5QW5kRmFybVxGYWN0b3J5QW5kRmFybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-o31rwamyhd
+
+[E:/Source/hafamex-clients/Components/Footer/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXJcRm9vdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-pi4fgnurt4
+
+[E:/Source/hafamex-clients/Components/FreshFruit/FreshFruit.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGcmVzaEZydWl0XEZyZXNoRnJ1aXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-p6wtso50rx
+
+[E:/Source/hafamex-clients/Components/FreshVegetable/FreshVegetable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGcmVzaFZlZ2V0YWJsZVxGcmVzaFZlZ2V0YWJsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-6d4ovvbzak
+
+[E:/Source/hafamex-clients/Components/GetContact/GetContact.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xHZXRDb250YWN0XEdldENvbnRhY3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ztfdtmnmt6
+
+[E:/Source/hafamex-clients/Components/Header/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXJcSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-p9jg4ec2er
+
+[E:/Source/hafamex-clients/Components/Map/Map.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYXBcTWFwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-pjclkuzq7h
+
+[E:/Source/hafamex-clients/Components/MenuFixed/MenuFixed.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNZW51Rml4ZWRcTWVudUZpeGVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-5h4kope8ax
+
+[E:/Source/hafamex-clients/Components/ModalQuickView/ModalQuickView.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNb2RhbFF1aWNrVmlld1xNb2RhbFF1aWNrVmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-m7p2h7krzc
+
+[E:/Source/hafamex-clients/Components/PremiumFreshFruit/PremiumFreshFruit.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcmVtaXVtRnJlc2hGcnVpdFxQcmVtaXVtRnJlc2hGcnVpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-dzi7f4h4tu
+
+[E:/Source/hafamex-clients/Components/ProductBanner/ProductBanner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9kdWN0QmFubmVyXFByb2R1Y3RCYW5uZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-57k941u98n
+
+[E:/Source/hafamex-clients/Components/ProductCard/ProductCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9kdWN0Q2FyZFxQcm9kdWN0Q2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-unc3ocuf04
+
+[E:/Source/hafamex-clients/Components/ProductHeader.razor/ProductHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9kdWN0SGVhZGVyLnJhem9yXFByb2R1Y3RIZWFkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wi9gk4vsub
+
+[E:/Source/hafamex-clients/Components/ProductList/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9kdWN0TGlzdFxQcm9kdWN0TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ikeyfywxxq
+
+[E:/Source/hafamex-clients/Components/ProductOffer/ProductOffer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9kdWN0T2ZmZXJcUHJvZHVjdE9mZmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-y3d1nbnip6
+
+[E:/Source/hafamex-clients/Components/ProductTopSeller/ProductTopSeller.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9kdWN0VG9wU2VsbGVyXFByb2R1Y3RUb3BTZWxsZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ekxn06phkv
+
+[E:/Source/hafamex-clients/Components/Slogan/Slogan.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTbG9nYW5cU2xvZ2FuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-twug2p8en9
+
+[E:/Source/hafamex-clients/Layout/HomeLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEhvbWVMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jmxnb97917
+
+[E:/Source/hafamex-clients/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-dzl4owq9w8
+
+[E:/Source/hafamex-clients/Layout/ProductLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XFByb2R1Y3RMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vuxy0v2ug8
+
+[E:/Source/hafamex-clients/Pages/About/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRcQWJvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6qhtl91nkk
+
+[E:/Source/hafamex-clients/Pages/Contact/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFxDb250YWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-kn851ndhtx
+
+[E:/Source/hafamex-clients/Pages/Home/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-l4t6o1vf7p
+
+[E:/Source/hafamex-clients/Pages/News/News.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c1xOZXdzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-xv3wwxofrf
+
+[E:/Source/hafamex-clients/Pages/ProductDetail/ProductDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbFxQcm9kdWN0RGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-8q4ssbc5ab
+
+[E:/Source/hafamex-clients/Pages/Product/ProductBrowse.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxQcm9kdWN0QnJvd3NlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-7cwvq7nfcr
+
+[E:/Source/hafamex-clients/Pages/Product/ProductPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxQcm9kdWN0UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-n531rxu6rf

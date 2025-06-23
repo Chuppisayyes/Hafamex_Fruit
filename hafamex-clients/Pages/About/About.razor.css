@@ -1,0 +1,30 @@
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+.about-scroll-container {
+    display: flex;
+    width: 300vw;
+}
+.about-scroll-container section {
+    width: 100vw;
+    padding: 20vw 10vw;
+}
+.about-scroll-container .col {
+    display: flex;
+    gap: 3em;
+}
+.about-scroll-container p {
+    font-size: 1.2rem;
+    width: 50vw;
+}
+.about-scroll-container h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.mask {
+    width: 0;
+}
+section {
+    height: 100vh;
+}

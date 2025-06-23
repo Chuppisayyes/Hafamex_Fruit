@@ -1,0 +1,274 @@
+/* Certificate */
+.certificate {
+    margin-top: 50px;
+    background-color: #fff;
+    text-align: center;
+    .container {
+      max-width: 1220px;
+      margin: 0 auto;
+  
+    h1.my-4 {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 56px;
+        text-shadow: 2px 2px 5px rgba(179, 179, 179, 0.6);
+        color: #B80A25
+;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 100px;
+          height: 4px;
+          background-color: #FFA09B;
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+    }
+
+    p{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        line-height: 2;
+    }
+  
+    .slider {
+        margin-top: 50px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+  
+        .slide-track {
+          display: flex;
+          width: calc(196px * 9); 
+          animation: slide 20s linear infinite; 
+        }
+  
+        .slide {
+          flex: 0 0 196px;
+          height: 139px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 20px; 
+  
+          img {
+            width: 196px;
+            height: 139px;
+            object-fit: contain;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+  
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* // Animation cho slider chạy liên tục */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+        /* // Dịch chuyển hết 5 slides (vì có 5 slides gốc) */
+      transform: translateX(calc(-196px * 5)); 
+    }
+}
+
+/* Certificate Responsive */
+
+/* Dưới 1280px */
+@media (max-width: 1280px) {
+  .certificate {
+    .container {
+      h1.my-4 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
+      .slider {
+        .slide-track {
+          width: calc(160px * 9);
+        }
+
+        .slide {
+          flex: 0 0 160px;
+          height: 120px;
+
+          img {
+            width: 160px;
+            height: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Dưới 1024px */
+@media (max-width: 1024px) {
+  .certificate {
+    .container {
+      h1.my-4 {
+        font-size: 42px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .slider {
+        .slide-track {
+          width: calc(140px * 9);
+        }
+
+        .slide {
+          flex: 0 0 140px;
+          height: 100px;
+
+          img {
+            width: 140px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Dưới 768px */
+@media (max-width: 768px) {
+  .certificate {
+    .container {
+      h1.my-4 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 1.8;
+      }
+
+      .slider {
+        .slide-track {
+          width: calc(120px * 9);
+        }
+
+        .slide {
+          flex: 0 0 120px;
+          height: 90px;
+
+          img {
+            width: 120px;
+            height: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Dưới 576px */
+@media (max-width: 576px) {
+  .certificate {
+    .container {
+      h1.my-4 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .slider {
+        .slide-track {
+          width: calc(100px * 9);
+        }
+
+        .slide {
+          flex: 0 0 100px;
+          height: 80px;
+
+          img {
+            width: 100px;
+            height: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Dưới 360px */
+@media (max-width: 360px) {
+  .certificate {
+    .container {
+      h1.my-4 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+
+      .slider {
+        .slide-track {
+          width: calc(90px * 9);
+        }
+
+        .slide {
+          flex: 0 0 90px;
+          height: 70px;
+
+          img {
+            width: 90px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Trên 1440px thì giữ nguyên */
+@media (min-width: 1441px) {
+  .certificate {
+    .container {
+      h1.my-4 {
+        font-size: 56px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .slider {
+        .slide-track {
+          width: calc(196px * 9);
+        }
+
+        .slide {
+          flex: 0 0 196px;
+          height: 139px;
+
+          img {
+            width: 196px;
+            height: 139px;
+          }
+        }
+      }
+    }
+  }
+}

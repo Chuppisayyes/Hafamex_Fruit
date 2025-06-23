@@ -1,0 +1,119 @@
+#hf-menu-fixed[b-5h4kope8ax] {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 6;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+
+        .hf-phone{
+            a{
+                background-color: #B80A25 !important;
+                animation: rotate-b-5h4kope8ax 0.2s ease-in-out infinite;
+            }
+            .sub-text-phone[b-5h4kope8ax] {
+                position: absolute;
+                /* // Đặt bên trái nút */
+                left: -300px; 
+                top: 50%;
+                /* // Căn giữa dọc */
+                transform: translateY(-50%);
+                background-color: #000;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                white-space: nowrap;
+                opacity: 0; 
+                text-decoration: none;
+
+                transition: opacity 0.2s ease;
+                /* // Ngăn chặn tương tác với sub text  */
+                pointer-events: none; 
+            }
+            &:hover[b-5h4kope8ax] {
+                .sub-text-phone {
+                    opacity: 1; 
+                }
+            }
+        }
+        .hf-phone[b-5h4kope8ax],
+        .hf-zalo[b-5h4kope8ax],
+        .hf-whatsapp[b-5h4kope8ax],
+        .hf-wechat[b-5h4kope8ax],
+        .back-to-top[b-5h4kope8ax] {
+            margin-bottom: 0px;
+            position: relative;
+            .hf-circle {
+                background-color: #B80A25
+;
+                border: none;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                img[b-5h4kope8ax] {
+                    width: 16px;
+                    height: 16px;
+                    object-fit: contain;
+                }
+
+                i[b-5h4kope8ax] {
+                    font-size: 16px;
+                }
+            }
+            /* // Sub text (ẩn mặc định) */
+            .sub-text[b-5h4kope8ax] {
+                position: absolute;
+                /* // Đặt bên trái nút */
+                left: -110px; 
+                top: 50%;
+                /* // Căn giữa dọc */
+                transform: translateY(-50%);
+                background-color: #000;
+                padding: 5px 10px;
+                border-radius: 5px;
+                white-space: nowrap;
+                opacity: 0; 
+                transition: opacity 0.2s ease;
+                /* // Ngăn chặn tương tác với sub text  */
+                pointer-events: none; 
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+
+            /* // Hiện sub text khi hover */
+            &:hover span.sub-text[b-5h4kope8ax] {
+                opacity: 1; 
+            }
+        }
+    }
+}
+/* Định nghĩa animation rotate */
+@keyframes rotate-b-5h4kope8ax {
+    0% {
+        transform: rotate(0deg); 
+    }
+    50% {
+        transform: rotate(-10deg); 
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

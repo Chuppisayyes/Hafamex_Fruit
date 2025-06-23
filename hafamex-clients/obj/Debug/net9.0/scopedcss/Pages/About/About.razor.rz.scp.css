@@ -1,0 +1,30 @@
+.wrapper[b-6qhtl91nkk] {
+    overflow-x: hidden;
+    position: relative;
+}
+.about-scroll-container[b-6qhtl91nkk] {
+    display: flex;
+    width: 300vw;
+}
+.about-scroll-container section[b-6qhtl91nkk] {
+    width: 100vw;
+    padding: 20vw 10vw;
+}
+.about-scroll-container .col[b-6qhtl91nkk] {
+    display: flex;
+    gap: 3em;
+}
+.about-scroll-container p[b-6qhtl91nkk] {
+    font-size: 1.2rem;
+    width: 50vw;
+}
+.about-scroll-container h1[b-6qhtl91nkk] {
+    font-size: 3rem;
+    margin: 0;
+}
+.mask[b-6qhtl91nkk] {
+    width: 0;
+}
+section[b-6qhtl91nkk] {
+    height: 100vh;
+}

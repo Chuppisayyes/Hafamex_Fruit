@@ -1,0 +1,318 @@
+.albumhome {
+  padding: 20px 20px;
+  .wrapper {
+    .bltitle {
+      margin-bottom: 10px;
+      .grbum {
+        display: flex;
+        justify-content: space-around;
+        .coll {
+          .ttalbum {
+            .ttcap {
+              font-size: 38px;
+              font-family: "poppins", sans-serif;
+              font-weight: 700;
+              letter-spacing: 0px;
+              font-style: italic;
+              color: #B80A25;
+            }
+            .tttitle {
+              font-size: 16px;
+              font-family: "poppins", sans-serif;
+              font-weight: 300;
+              font-style: italic;
+              color: #B80A25;
+            }
+          }
+        }
+        .colr {
+        }
+      }
+    }
+    .gallery {
+      overflow: hidden;
+      display: flex;
+      height: 500px;
+      position: relative;
+
+      .imgWrap {
+        cursor: pointer;
+        flex: 1;
+        min-width: 0;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        transition: all 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+        will-change: transform, opacity;
+        transform-origin: center center;
+
+        &:last-child {
+          min-width: 1px;
+        }
+
+        .caption {
+          position: absolute;
+          left: 0;
+          bottom: -100%;
+          background-color: #ffffff;
+          opacity: 0.9;
+          border-top: 3px solid #f1ba88;
+          padding: 20px 10%;
+          font-family: "poppins", "sans-serif";
+          color: #B80A25;
+          width: 100%;
+          transition: bottom 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+          will-change: bottom;
+          z-index: 2;
+
+          h3 {
+            font-size: clamp(1rem, 1.2vw, 1.25rem);
+            text-transform: uppercase;
+            margin-bottom: 0;
+            color: #B80A25;
+            font-family: "poppins", "sans-serif";
+          }
+
+          span {
+            font-size: 75%;
+          }
+        }
+
+        &:hover {
+          flex-grow: 2.25;
+
+          .caption {
+            bottom: 0;
+          }
+        }
+
+        &:not(:hover) {
+          flex-grow: 0.8;
+        }
+
+        .img-label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          cursor: pointer;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            object-fit: cover;
+            transform: translateX(-50%) translateY(-50%);
+          }
+        }
+      }
+
+      .full-toggle:checked + .imgWrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 5;
+        transform: none;
+        animation: zoomIn 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+
+        .caption {
+          bottom: 0;
+        }
+      }
+
+      .full-toggle:checked ~ .imgWrap:not(:checked + .imgWrap) {
+        width: 0;
+        opacity: 0;
+      }
+
+      .full-toggle:checked::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+        transition: background 0.75s ease-in-out;
+        animation: fadeIn 0.75s ease-in-out forwards;
+      }
+
+      .full-toggle:not(:checked) + .imgWrap.fullscreen-exit {
+        animation: zoomOut 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+      }
+
+      .close {
+        display: none;
+        position: fixed;
+        right: 1rem;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #18514a;
+        color: #fff;
+        cursor: pointer;
+        z-index: 9;
+        transition: opacity 0.75s ease, background-color 0.3s ease;
+        transform: translateY(-50%);
+        opacity: 0;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: #d64b31;
+        }
+      }
+
+      .full-toggle[id="img1-full"]:checked ~ .close[for="img1-full"],
+      .full-toggle[id="img2-full"]:checked ~ .close[for="img2-full"],
+      .full-toggle[id="img3-full"]:checked ~ .close[for="img3-full"],
+      .full-toggle[id="img4-full"]:checked ~ .close[for="img4-full"],
+      .full-toggle[id="img5-full"]:checked ~ .close[for="img5-full"],
+      .full-toggle[id="img6-full"]:checked ~ .close[for="img6-full"]
+      {
+        display: block;
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomOut {
+      from {
+        transform: scale(1);
+        opacity: 1;
+      }
+      to {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .gallery {
+    height: 400px;
+    .imgWrap .caption {
+      padding: 15px 8%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    height: 350px;
+    .imgWrap .caption {
+      h3 {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    height: auto;
+
+    .imgWrap {
+      width: 100%;
+      height: 300px;
+      flex-grow: 1 !important;
+
+      &:hover {
+        flex-grow: 1 !important;
+      }
+
+      &:not(:hover) {
+        flex-grow: 1 !important;
+      }
+
+      .caption {
+        font-size: 0.85rem;
+        padding: 12px 6%;
+        h3 {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .full-toggle:checked + .imgWrap {
+      height: 100vh !important;
+    }
+  }
+
+  .close {
+    width: 40px;
+    height: 40px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery {
+    .imgWrap {
+      height: 250px;
+
+      .caption {
+        padding: 10px 5%;
+        h3 {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .gallery {
+    .imgWrap {
+      height: 200px;
+
+      .caption {
+        padding: 8px 4%;
+        h3 {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .gallery {
+    height: 550px;
+    .imgWrap .caption {
+      padding: 25px 12%;
+    }
+  }
+}

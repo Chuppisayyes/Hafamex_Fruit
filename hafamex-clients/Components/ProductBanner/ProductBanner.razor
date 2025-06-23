@@ -1,0 +1,45 @@
+@inject NavigationManager NavigationManager
+
+<section class="bg-product">
+    <div class="container">
+        <div class="lf animate__fadeInLeft animate__animated animate__slow ">
+            <h1 class="poppins-600">Taste the Best of April</h1>
+            <h4 class="poppins-500">Fresh, Juicy, and Full of Life – Dragon Fruit!</h4>
+            <p class="poppins-400">We are a company specializing in exporting fresh fruits to the world.</p>
+            <p class="poppins-400">We are committed to providing the best quality products.</p>
+            <button class="btn-get-contact">Contact us</button>
+            <button class="btn-get-contact">(+84) 375 225 229</button>
+        </div>
+        <div class="rg">
+            <div class="fruit-container animate__fadeInRight animate__animated animate__slow">
+                <img src="https://i.postimg.cc/kgSBXTM7/dragonfruitnobg.png" width="500px" alt="Dragon Fruit"
+                    class="fruit @(shouldRunAnimation ? "appear" : "")">
+            </div>
+        </div>
+    </div>
+    <div class="pseudo-bg">
+        <img src="https://i.postimg.cc/MKNnSCSs/water.png" width="400px" alt="water" class=" @(shouldRunAnimation ? "appear" : "")">
+    </div>
+</section>
+
+@code {
+    private bool shouldRunAnimation = true;
+
+    protected override void OnInitialized()
+    {
+        NavigationManager.LocationChanged += (sender, args) =>
+        {
+            shouldRunAnimation = true;
+            StateHasChanged();
+        };
+    }
+
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender)
+        {
+            shouldRunAnimation = false;
+        }
+        return Task.CompletedTask;
+    }
+}

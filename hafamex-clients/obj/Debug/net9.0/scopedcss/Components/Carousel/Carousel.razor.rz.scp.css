@@ -1,0 +1,74 @@
+/* Carousel */
+.carousel-home[b-5vhxcmij76]{
+    animation: appear-b-5vhxcmij76 1s ease-out forwards;
+    .carousel{
+        position: relative;
+        .carousel-indicators{
+            position: absolute;
+            bottom: 110px;
+        }
+        .carousel-inner[b-5vhxcmij76]{
+            .carousel-item{
+                position: relative;
+                img{
+                    /* width: 100%; */
+                    /* height: 100vh; */
+                    /* object-fit: cover; */
+                }
+                .carousel-caption[b-5vhxcmij76]{
+                    position: absolute;
+                    bottom: 120px;
+                    font-family: "Poppins", sans-serif;
+                    h5{
+                        font-weight: 600;
+                        font-size: 36px;
+                        color: white;
+                    }
+                    p[b-5vhxcmij76]{
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .carousel-control-prev[b-5vhxcmij76]{
+        .icon-chervon-left{
+            color: #73ad17;
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            cursor: pointer;
+            border: 3px solid #73ad17;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 800;
+        }
+    }
+    .carousel-control-next[b-5vhxcmij76]{
+        .icon-chervon-right{
+            color: #73ad17;
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            cursor: pointer;
+            border: 3px solid #73ad17;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 800;
+        }
+    }
+}
+
+@keyframes appear-b-5vhxcmij76 {
+    0% {
+        transform: scale(0); /* Bắt đầu từ kích thước 0 */
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1); /* Phóng to đến kích thước đầy đủ */
+        opacity: 1;
+    }
+}

@@ -1,0 +1,54 @@
+﻿@inherits LayoutComponentBase
+@using Blazored.Modal
+@inject NavigationManager NavigationManager
+@using hafamex_clients.Components.Header
+@using hafamex_clients.Components.Footer
+@using hafamex_clients.Components.ProductHeader_razor
+@using hafamex_clients.Components.MenuFixed
+
+<div @key="NavigationManager.Uri">
+    @if (isProductPage)
+    {
+        <ProductHeader />
+        <div class="main-layout-first">
+            @Body
+        </div>
+    }
+    else
+    {
+        <Header />
+        @* <ProductHeader /> *@
+        <div class="main-layout-second">
+            @Body
+        </div>
+    }
+    <MenuFixed />
+    <Footer />
+</div>
+@* @code {
+    private bool IsProductPage()
+    {
+        var currentUri = new Uri(NavigationManager.Uri);
+        var path = currentUri.AbsolutePath.ToLowerInvariant();
+        return path == "/product" || path == "/productbrowse";
+    }
+} *@
+@code {
+    private bool isProductPage;
+
+    protected override void OnInitialized()
+    {
+        UpdateLayout();
+        NavigationManager.LocationChanged += (_, __) =>
+        {
+            UpdateLayout();
+            InvokeAsync(StateHasChanged);
+        };
+    }
+
+    private void UpdateLayout()
+    {
+        var path = new Uri(NavigationManager.Uri).AbsolutePath.ToLowerInvariant();
+        isProductPage = path == "/product" || path == "/productbrowse";
+    }
+}

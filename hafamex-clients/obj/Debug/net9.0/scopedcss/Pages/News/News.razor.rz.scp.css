@@ -1,0 +1,134 @@
+/* Basic Reset */
+*[b-xv3wwxofrf] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body[b-xv3wwxofrf] {
+    font-family: 'Poppins', sans-serif;
+    background: #F9F9F9;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .news-hero[b-xv3wwxofrf] {
+    background: linear-gradient(45deg, #F9F9E0 0%, #FCE7F3 50%, #C7E9B0 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-content[b-xv3wwxofrf] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .hero-image[b-xv3wwxofrf] {
+    width: 200px;
+    /* height: auto; */
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .hero-text[b-xv3wwxofrf] {
+    max-width: 1200px;
+  }
+  
+  .hero-title[b-xv3wwxofrf] {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    outline: none;
+    color: #3B3B3B;
+  }
+  
+  .hero-subtitle[b-xv3wwxofrf] {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  /* News List */
+  .news-list[b-xv3wwxofrf] {
+    padding: 100px 20px;
+    background: #ffffff;
+  }
+  
+  .news-cards[b-xv3wwxofrf] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .news-card[b-xv3wwxofrf] {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .news-card:hover[b-xv3wwxofrf] {
+    transform: translateY(-10px);
+  }
+  
+  .news-card img[b-xv3wwxofrf] {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .news-card h3[b-xv3wwxofrf] {
+    font-size: 22px;
+    margin: 20px;
+  }
+  
+  .news-card p[b-xv3wwxofrf] {
+    font-size: 16px;
+    margin: 0 20px 20px;
+    color: #666;
+  }
+  
+  .news-card a[b-xv3wwxofrf] {
+    display: inline-block;
+    margin: 0 20px 20px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* CTA Section */
+  .cta-section[b-xv3wwxofrf] {
+    background: #4CAF50;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-title[b-xv3wwxofrf] {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button[b-xv3wwxofrf] {
+    padding: 15px 40px;
+    background: white;
+    color: #4CAF50;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover[b-xv3wwxofrf] {
+    background: #f1f1f1;
+  }
+  
