@@ -116,17 +116,9 @@ build_metadata.AdditionalFiles.CssScope = b-ekxn06phkv
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTbG9nYW5cU2xvZ2FuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-twug2p8en9
 
-[E:/Source/hafamex-clients/Layout/HomeLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEhvbWVMYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-jmxnb97917
-
 [E:/Source/hafamex-clients/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-dzl4owq9w8
-
-[E:/Source/hafamex-clients/Layout/ProductLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XFByb2R1Y3RMYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-vuxy0v2ug8
 
 [E:/Source/hafamex-clients/Pages/About/About.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRcQWJvdXQucmF6b3I=

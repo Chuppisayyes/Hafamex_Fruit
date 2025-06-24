@@ -1,0 +1,81 @@
+
+@inject NavigationManager NavigationManager
+
+<header class="header" id="header">
+    <div class="hd-container d-flex justify-content-between">
+        <div class="hd-left">
+            <div class="logo d-flex align-items-center">
+                <img src="https://i.postimg.cc/BZh8h8wf/logo-Nen-Trang1.png" width="80px" height="80px" alt="logo_nen_xanh" />
+                <h2>HAFAMEX FRUIT</h2>
+            </div>
+        </div>
+
+        <div class="hd-right">
+            <div class="menu">
+                <ul class="@GetMenuClass()">
+                    <li class="nav-item @IsActive("/")">
+                        <NavLink href="/">Home</NavLink>
+                    </li>
+                    <li class="nav-item @IsActive("/about")">
+                        <NavLink href="/about" >About us</NavLink>
+                    </li>
+                    <li class="has-dropdown nav-item @(IsProductActive() ? "active" : "")">
+                        <div class="d-flex align-items-center">
+                            <NavLink href="/product">Product</NavLink>
+                            <i class="fa-solid fa-chevron-down ms-2"></i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li class="sub-menu-item">
+                                <NavLink href="/product-browse#fresh-fruit">Fresh Fruit</NavLink>
+                            </li>
+                            <li class="sub-menu-item">
+                                <NavLink href="/product-browse#fresh-vegetable">Fresh Vegetable</NavLink>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item @IsActive("/news")">
+                        <NavLink href="/news">News</NavLink>
+                    </li>
+                    <li class="nav-item @IsActive("/contact")">
+                        <NavLink href="/contact">Contact</NavLink>
+                    </li>
+
+                    <!-- Không có nav-item, không xử lý active -->
+                    <li>
+                        <button type="button" class="custom-button">
+                            (+84) 375 225 229
+                            <svg class="custom-icon" viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                                    class="icon-path"></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+@code {
+    private bool isMenuOpen = false;
+
+    private void ToggleMenu()
+    {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    private string GetMenuClass() => isMenuOpen ? "nav open" : "nav";
+
+    private string IsActive(string href)
+    {
+        var currentUri = new Uri(NavigationManager.Uri);
+        return currentUri.AbsolutePath.Equals(href, StringComparison.OrdinalIgnoreCase) ? "active" : "";
+    }
+
+    private bool IsProductActive()
+    {
+        var currentUri = new Uri(NavigationManager.Uri).AbsolutePath.ToLower();
+        return currentUri.Contains("/product") || currentUri.Contains("/productbrowse");
+    }
+}

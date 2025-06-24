@@ -131,7 +131,8 @@
 }
 
 .btn-get-more[b-ikeyfywxxq] {
-  padding: 16px 32px;
+  z-index: 1000;
+  padding: 16px 0px;
   background-color: #fff;
   border: 1px solid #b80a25;
   border-radius: 45px;
@@ -140,6 +141,7 @@
   cursor: pointer;
   outline: none;
   a{
+  padding: 0px 32px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;

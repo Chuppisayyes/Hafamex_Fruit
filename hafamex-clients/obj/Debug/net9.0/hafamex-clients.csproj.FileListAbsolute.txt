@@ -41,9 +41,7 @@ E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\ProductList\Prod
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\ProductOffer\ProductOffer.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\ProductTopSeller\ProductTopSeller.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\Slogan\Slogan.razor.rz.scp.css
-E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Layout\HomeLayout.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
-E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Layout\ProductLayout.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Pages\About\About.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Pages\Contact\Contact.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Pages\Home\Home.razor.rz.scp.css
@@ -56,10 +54,6 @@ E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\projectbundle\hafamex-clien
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\raa8419rum-8qij0y2dsa.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\u6q24wx1or-0mmnn3yi2p.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\fbsx0z42hp-1xz42r08xo.gz
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\egq5ip67s8-vdvmqjth9m.gz
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\wtqfjdvpd3-nkxpl4en8j.gz
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\ug46gpw63b-u1pmow4u92.gz
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\lrxcfqsd7a-mgzc4z0psp.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\rdf34g3tgs-bqjiyaj88i.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\igc1d0u4wh-c2jlpeoesf.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\68irkv037c-erw9l3u2r3.gz
@@ -107,8 +101,6 @@ E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\ajih2oi4k7-0j3bgjxly4.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\w57dhdj04k-03ghslhaa0.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\jprtmgf517-u8n5mb9wez.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\of8ka2v689-xineniuf5l.gz
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\baq8ctmubs-4fazzob55f.gz
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\ee2j129e2l-3txmk93xa1.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\staticwebassets.build.json
 E:\Source\hafamex-clients\obj\Debug\net9.0\staticwebassets.build.json.cache
 E:\Source\hafamex-clients\obj\Debug\net9.0\staticwebassets.development.json
@@ -119,3 +111,6 @@ E:\Source\hafamex-clients\obj\Debug\net9.0\refint\hafamex-clients.dll
 E:\Source\hafamex-clients\obj\Debug\net9.0\hafamex-clients.pdb
 E:\Source\hafamex-clients\obj\Debug\net9.0\hafamex-clients.genruntimeconfig.cache
 E:\Source\hafamex-clients\obj\Debug\net9.0\ref\hafamex-clients.dll
+E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\xlzxaie6gv-ka88hqk74a.gz
+E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\baq8ctmubs-d2dztg8bcv.gz
+E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\ee2j129e2l-l7sfrqgai3.gz

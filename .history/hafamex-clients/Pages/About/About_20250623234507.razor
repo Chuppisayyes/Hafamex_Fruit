@@ -1,0 +1,64 @@
+@page "/about"
+@page "/ve-chung-toi"
+@using Microsoft.JSInterop
+@inject IJSRuntime JS
+<div class="wrapper d-flex flex-nowrap">
+  <section class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="container">
+        <section id="home" className="min-h-screen relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/2518845/pexels-photo-2518845.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`
+          }}
+        />
+        <div className="relative min-h-screen flex items-center justify-center text-center text-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto space-y-8">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
+                From Farm to 
+                <span className="text-[#b80a25] block">Global Market</span>
+              </h1>
+              <p className="text-xl sm:text-2xl text-gray-200 max-w-2xl mx-auto">
+                Premium Vietnamese agricultural products exported worldwide with international quality standards
+              </p>
+              <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                <button 
+                  onClick={() => smoothScrollTo('process')}
+                  className="w-full sm:w-auto bg-[#b80a25] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#a00920] transition-all transform hover:scale-105"
+                >
+                  View Our Products
+                </button>
+                <button 
+                  onClick={() => smoothScrollTo('about')}
+                  className="w-full sm:w-auto border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <ChevronDown className="w-8 h-8 text-white" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="section section--dark section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+    Part Two
+  </section>
+  <section class="section section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+    Part Three
+  </section>
+  <section class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center four">
+    Part Four
+  </section>
+</div>
+
+<nav>
+  <div>one</div>
+  <div>two</div>
+  <div>three</div>
+  <div>four</div>
+</nav>

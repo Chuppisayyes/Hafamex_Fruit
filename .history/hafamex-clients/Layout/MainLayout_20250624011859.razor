@@ -1,0 +1,39 @@
+﻿@inherits LayoutComponentBase
+@using Blazored.Modal
+@inject NavigationManager NavigationManager
+@using hafamex_clients.Components.Header
+@using hafamex_clients.Components.Footer
+@using hafamex_clients.Components.ProductHeader_razor
+@using hafamex_clients.Components.MenuFixed
+<div>
+    @* Phần Header giữ cố định bên ngoài *@
+    <Header />
+    <ProductHeader style="display: @(isProductPage ? "block" : "none")" />
+    
+    <div class="main-layout">
+        @Body
+    </div>
+
+    <MenuFixed />
+    <Footer />
+</div>
+
+@code {
+    private bool isProductPage;
+
+    protected override void OnInitialized()
+    {
+        UpdateLayout();
+        NavigationManager.LocationChanged += (_, __) =>
+        {
+            UpdateLayout();
+            InvokeAsync(StateHasChanged);
+        };
+    }
+
+    private void UpdateLayout()
+    {
+        var path = new Uri(NavigationManager.Uri).AbsolutePath.ToLowerInvariant();
+        isProductPage = path == "/product" || path == "/productbrowse";
+    }
+}

@@ -1,0 +1,109 @@
+.section--large {
+  width: 100vw;
+  background-color: #e4002b;
+  color: white;
+}
+
+.section--small {
+  width: 46rem;
+}
+
+.section--dark {
+  color: white;
+  background-color: black;
+}
+
+section.four {
+  background-color: #0a1b65;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+nav div {
+  flex-basis: 25%;
+  width: 80px;
+  text-align: center;
+  height: 50px;
+  font-size: 21px;
+  line-height: 50px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero-content {
+      padding: 0px 250px;
+      .hero-title {
+        text-align: center;
+        font-size: 68px;
+        font-weight: 900;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 1px;
+        outline: none;
+        color: #fff;
+        .highlight {
+          color: #b80a25;
+        }
+      }
+      .hero-subtitle {
+        margin: 20px 0px;
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+      }
+    }
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn-view-products {
+        padding: 16px 0px;
+        background-color: #b80a25;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        a {
+          padding: 40px;
+          font-size: 22px;
+          font-weight: 400;
+          font-family: "Roboto", sans-serif;
+          color: #fff;
+          text-decoration: none;
+        }
+        &:hover {
+          background-color: #b80a25;
+          box-shadow: 0px 15px 20px #ca5c6c;
+          transform: translateY(-7px);
+          a {
+            color: #fff;
+          }
+        }
+        &:active {
+          transform: translateY(-1px);
+        }
+      }
+      .btn-learn-more {
+        padding: 16px 0px;
+        
+    }
+    }
+  }
+}

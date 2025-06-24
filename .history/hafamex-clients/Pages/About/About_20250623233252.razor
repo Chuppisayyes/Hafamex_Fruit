@@ -1,0 +1,36 @@
+@page "/about"
+@page "/ve-chung-toi"
+@using Microsoft.JSInterop
+@inject IJSRuntime JS
+
+<div class="wrapper d-flex flex-nowrap">
+  <section class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
+    Part One
+  </section>
+  <section class="section section--dark section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+    Part Two
+  </section>
+  <section class="section section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+    Part Three
+  </section>
+  <section class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center four">
+    Part Four
+  </section>
+</div>
+
+<nav>
+  <div>one</div>
+  <div>two</div>
+  <div>three</div>
+  <div>four</div>
+</nav>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initGsapScrollTrigger");
+        }
+    }
+}
