@@ -1,0 +1,39 @@
+@using System.Globalization
+@inject NavigationManager Navigation
+@if (Product == null)
+{
+    <p style="color:red;">⚠ Product data is null!</p>
+}
+else
+{
+    <div class="product-card">
+        <div class="product-image">
+            <a href="@($"/product-detail/{Product.Slug}")">
+                <img src="@Product.Image" alt="@Product.Name" loading="lazy" />
+            </a>
+            <button class="quick-view-btn">
+                <img src="Images/logoNenTrang1.jpg" alt="Quick view" />
+            </button>
+        </div>
+        <div class="product-info">
+            <a href="@($"/product-detail/{Product.Slug}")" class="product-name">
+                @Product.Name
+            </a>
+            <p class="product-discription">@Product.Description</p>
+            <button class="contact-btn"><a href=""></a></button>
+            <button class="details-btn">
+                <a href="@($"/product-detail/{Product.Slug}")" > 
+                Get Detail 
+                </a>
+            </button>
+        </div>
+    </div>
+}
+@code {
+    [Parameter] public Product Product { get; set; } = default!;
+    private void NavigateToDetail()
+    {
+        Navigation.NavigateTo($"/product-detail/{Product.Slug}");
+    }
+
+}

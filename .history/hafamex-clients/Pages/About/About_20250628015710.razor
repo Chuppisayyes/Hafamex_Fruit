@@ -1,0 +1,50 @@
+@page "/about"
+@page "/ve-chung-toi"
+@using Microsoft.AspNetCore.Components.Routing
+@using hafamex_clients.Components.Journey
+@using hafamex_clients.Components.Process
+@using hafamex_clients.Components.AboutHero
+@using hafamex_clients.Components.AboutStory
+
+<AboutHero/>
+<AboutStory/>
+
+<section
+    class="about-section value section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="value-card">
+            <div class="value-card__icon icon-target">
+                <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h4 class="value-card__title">Mission</h4>
+            <p class="value-card__text">
+                To deliver the finest Vietnamese agricultural products to global markets while supporting local
+                farmers and sustainable practices.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="value-card__icon icon-eye">
+                <i class="fa-regular fa-eye"></i>
+            </div>
+            <h4 class="value-card__title">Vision</h4>
+            <p class="value-card__text">
+                To become the leading agricultural export company in Southeast Asia, known for quality, innovation,
+                and sustainability.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="value-card__icon icon-users">
+                <i class="fa-solid fa-users-rays"></i>
+            </div>
+            <h4 class="value-card__title">Values</h4>
+            <p class="value-card__text">
+                Quality, integrity, sustainability, and innovation guide every decision we make in our journey to
+                excellence.
+            </p>
+        </div>
+    </div>
+</section>
+<Journey />
+<Process />

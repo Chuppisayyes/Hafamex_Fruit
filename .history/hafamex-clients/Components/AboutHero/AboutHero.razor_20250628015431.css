@@ -1,0 +1,222 @@
+.section--large {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://i.postimg.cc/JhNnJS34/DJI-20250423070305-0036-D.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.about-section {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.hero {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero-content {
+      padding: 0px 250px;
+      text-align: center;
+
+      .hero-title {
+        font-size: 68px;
+        font-weight: 900;
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+
+        .highlight {
+          color: #b80a25;
+        }
+      }
+
+      .hero-subtitle {
+        margin: 20px 0px;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+      }
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn-view-products,
+      .btn-learn-more {
+        padding: 16px 0px;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.6s ease;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin: 0.5rem;
+
+        a {
+          padding: 0px 40px;
+          text-decoration: none;
+          display: inline-block;
+        }
+      }
+
+      .btn-view-products {
+        background-color: #b80a25;
+        border: none;
+
+        a {
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: #9d051c;
+          transform: translateY(-7px);
+        }
+
+        &:active {
+          transform: translateY(-1px);
+        }
+      }
+
+      .btn-learn-more {
+        background-color: transparent;
+        border: 2px solid #fff;
+        margin-left: 20px;
+
+        a {
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: #fff;
+          transform: translateY(-7px);
+
+          a {
+            color: #000;
+          }
+        }
+
+        &:active {
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 1280px) {
+    .hero-content {
+      padding: 0px 150px;
+
+      .hero-title {
+        font-size: 58px;
+      }
+
+      .hero-subtitle {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero-content {
+      padding: 0px 100px;
+
+      .hero-title {
+        font-size: 48px;
+      }
+
+      .hero-subtitle {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      padding: 0px 40px;
+
+      .hero-title {
+        font-size: 36px;
+      }
+
+      .hero-subtitle {
+        font-size: 15px;
+      }
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+
+      .btn-learn-more {
+        margin-left: 0 !important; 
+      }
+
+      .btn-view-products,
+      .btn-learn-more {
+        width: 100%;
+        max-width: 280px;
+
+        a {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero-content {
+      padding: 0px 20px;
+
+      .hero-title {
+        font-size: 28px;
+      }
+
+      .hero-subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .hero-content {
+      padding: 0px 10px;
+
+      .hero-title {
+        font-size: 24px;
+      }
+
+      .hero-subtitle {
+        font-size: 13px;
+      }
+    }
+
+    .btn-view-products,
+    .btn-learn-more {
+      font-size: 14px;
+    }
+  }
+}

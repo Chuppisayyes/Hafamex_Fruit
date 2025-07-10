@@ -1,0 +1,210 @@
+.footer {
+background-color: #b80a25;
+  .ft-container {
+    padding: 6.25rem;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .fcol-1,
+      .fcol-2,
+      .fcol-3,
+      .fcol-4 {
+        flex: 1 1 22%;
+        font-family: "Poppins", sans-serif;
+
+        h3 {
+          font-size: 1.375rem;
+          color: #fff;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            padding: 0.625rem 0;
+
+            a {
+              color: #fff;
+              text-decoration: none;
+              font-size: 1rem;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .fcol-1 {
+        .logo {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+
+          img {
+            width: 150px;
+            height: 150px;
+          }
+
+          h2 {
+            font-size: 1.625rem;
+            color: #fff;
+          }
+        }
+
+        p {
+          padding: 0 1.5rem;
+          font-size: 1rem;
+        }
+
+        .nav-social-icon {
+          display: flex;
+          gap: 0.625rem;
+          padding: 0;
+          margin: 0;
+          justify-content: center;
+          align-items: center;
+          li {
+            list-style: none;
+
+            a {
+              width: 3rem;
+              height: 3rem;
+              border: 1px solid #fff;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 1.5rem;
+              color: #fff;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .fcol-4 {
+        .info-row {
+          display: flex;
+          gap: 0.75rem;
+          margin-bottom: 1.5rem;
+          align-items: center;
+          color: #fff;
+          i {
+            color: #fff;
+            font-size: 1.25rem;
+          }
+
+          span {
+            font-size: 1rem;
+          }
+        }
+
+        .get-info {
+          display: flex;
+          height: 3rem;
+          margin-top: 1rem;
+
+          input {
+            flex: 1;
+            padding: 0.625rem 1rem;
+            border: 1px solid #fff;
+            border-top-left-radius: 0.9375rem;
+            border-bottom-left-radius: 0.9375rem;
+          }
+
+          button {
+            width: 6rem;
+            background-color: #ffffff;
+            border: 1px solid #fff;
+            color: #fff;
+            border-top-right-radius: 0.9375rem;
+            border-bottom-right-radius: 0.9375rem;
+            &:hover{
+              background-color: #b80a25;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* Tablet and Mobile */
+  @media (max-width: 1024px) {
+    .ft-container {
+      padding: 2.5rem 1rem;
+
+      .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .fcol-1,
+        .fcol-2,
+        .fcol-3,
+        .fcol-4 {
+          width: 100%;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+
+        .fcol-1 {
+          .logo {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          p {
+            padding: 0 1rem;
+          }
+
+          .nav-social-icon {
+            justify-content: center;
+            flex-wrap: wrap;
+          }
+        }
+
+        .fcol-4 {
+          .info-row {
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: left;
+          }
+
+          .get-info {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            input,
+            button {
+              width: 100%;
+              max-width: 20rem;
+              margin: 0.25rem 0;
+              border-radius: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer-bottom {
+  background: #0f1310;
+  color: #999;
+  height: 3.75rem;
+  padding: 1.25rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+}

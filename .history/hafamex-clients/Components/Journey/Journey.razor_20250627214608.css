@@ -1,0 +1,56 @@
+.journey-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  pa
+  text-align: center;
+  .journey-title {
+    margin: 30px;
+    font-weight: 700;
+    color: #1f2937;
+  }
+
+  .journey-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .journey-item {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      text-align: left;
+
+      .journey-year {
+        flex-shrink: 0;
+        width: 6rem;
+        height: 6rem;
+        background-color: #b80a25;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          color: #fff;
+          font-weight: 700;
+          font-size: 1.125rem;
+        }
+      }
+
+      .journey-content {
+        flex: 1;
+
+        .journey-heading {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #1f2937;
+          margin-bottom: 0.5rem;
+        }
+
+        .journey-description {
+          color: #4b5563;
+        }
+      }
+    }
+  }
+}

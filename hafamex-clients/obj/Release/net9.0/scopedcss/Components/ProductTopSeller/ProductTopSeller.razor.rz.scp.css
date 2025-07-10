@@ -1,0 +1,206 @@
+.top-product[b-ekxn06phkv] {
+  background-image: linear-gradient(
+    45deg,
+    #ffd6e8 0%,
+    #fff5f9 50%,
+    #fff3b0 100%
+  );
+  margin-top: 50px;
+  padding-top: 50px;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  .main-title {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 58px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #b80a25;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+  .subtitle[b-ekxn06phkv] {
+    font-size: 16px;
+    padding: 0px 300px;
+    font-weight: 400;
+    /* color: #B80A25 ; */
+    color: #6b7280;
+    text-shadow: 2px 2px 4px rgba(251, 251, 251, 0.5);
+  }
+  .wrapper[b-ekxn06phkv] {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .inner {
+      --w: 160px;
+      --h: 220px;
+      --translateZ: calc((var(--w) + var(--h)) + 0px);
+      --rotateX: -15deg;
+      --perspective: 1000px;
+      position: absolute;
+      width: var(--w);
+      height: var(--h);
+      top: 15%;
+      left: calc(50% - (var(--w) / 2) - 2.5px);
+      z-index: 2;
+      transform-style: preserve-3d;
+      transform: perspective(var(--perspective));
+      animation: rotating-b-ekxn06phkv 20s linear infinite; /* */
+      .card {
+        position: absolute;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        overflow: hidden;
+        inset: 0;
+        transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
+          translateZ(var(--translateZ));
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 250px;
+        .overlay {
+          width: 100%;
+          height: 100%;
+          .float-content {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            .logo-title {
+              /* color: #598a25; */
+              color: #b80a25;
+              font-size: 18px;
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+            .logo-desc[b-ekxn06phkv] {
+              font-size: 16px;
+              line-height: 1.4;
+            }
+          }
+        }
+        &:hover[b-ekxn06phkv] {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .top-product[b-ekxn06phkv] {
+    .main-title {
+      font-size: 46px;
+    }
+    .subtitle[b-ekxn06phkv] {
+      font-size: 15px;
+      padding: 0 200px;
+    }
+    .wrapper .inner[b-ekxn06phkv] {
+      --w: 140px;
+      --h: 200px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-product[b-ekxn06phkv] {
+    height: auto;
+    padding: 40px 0;
+
+    .main-title {
+      font-size: 40px;
+    }
+
+    .subtitle[b-ekxn06phkv] {
+      padding: 0 100px;
+      font-size: 14px;
+    }
+
+    .wrapper[b-ekxn06phkv] {
+      height: 500px;
+
+      .inner {
+        --w: 130px;
+        --h: 180px;
+        top: 20%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top-product[b-ekxn06phkv] {
+    .main-title {
+      font-size: 34px;
+    }
+
+    .subtitle[b-ekxn06phkv] {
+      font-size: 13px;
+      padding: 0 50px;
+    }
+
+    .wrapper[b-ekxn06phkv] {
+      height: 420px;
+
+      .inner {
+        --w: 120px;
+        --h: 160px;
+        top: 22%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .top-product[b-ekxn06phkv] {
+    .main-title {
+      font-size: 28px;
+    }
+
+    .subtitle[b-ekxn06phkv] {
+      font-size: 12px;
+      padding: 0 20px;
+    }
+
+    .wrapper[b-ekxn06phkv] {
+      display: none; 
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .top-product[b-ekxn06phkv] {
+    .main-title {
+      font-size: 24px;
+    }
+
+    .subtitle[b-ekxn06phkv] {
+      font-size: 11px;
+      padding: 0 10px;
+    }
+  }
+}
+
+
+
+
+@keyframes rotating-b-ekxn06phkv {
+  from {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+      rotateY(0);
+  }
+  to {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+      rotateY(1turn);
+  }
+}

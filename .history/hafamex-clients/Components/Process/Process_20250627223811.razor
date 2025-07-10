@@ -1,0 +1,22 @@
+<section class="process">
+    <div class="process-container">
+        <h1 class="process-title">
+            Factory & Technology
+        </h1>
+        <p class="subtitle-process">
+            From seed to shelf, our comprehensive process ensures the highest quality standards at every step
+        </p>
+        <div class="process-list">
+            @foreach (var item in Process)
+            {
+                <div class="process-item">
+                    <div class="process-img">
+                        <img src="@item.ProcessImg" alt="@item.ProcessTitle">
+                    </div>
+                    <h5 class="process-item-title">@item.ProcessTitle</h5>
+                    <p class="process-item-subtitle">@item.ProcessSubtitle</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>

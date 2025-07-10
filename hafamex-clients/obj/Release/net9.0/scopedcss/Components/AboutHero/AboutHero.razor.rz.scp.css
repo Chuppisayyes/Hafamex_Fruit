@@ -1,0 +1,221 @@
+.section--large[b-lnkmsgul51] {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://i.postimg.cc/JhNnJS34/DJI-20250423070305-0036-D.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .container[b-lnkmsgul51] {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.about-section[b-lnkmsgul51] {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.hero[b-lnkmsgul51] {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero-content {
+      padding: 0px 250px;
+      text-align: center;
+
+      .hero-title {
+        font-size: 68px;
+        font-weight: 900;
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 1px;
+        color: #fff;
+        outline: none;
+        .highlight {
+          color: #b80a25;
+        }
+      }
+
+      .hero-subtitle[b-lnkmsgul51] {
+        margin: 20px 0px;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+      }
+    }
+
+    .hero-buttons[b-lnkmsgul51] {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn-view-products,
+      .btn-learn-more {
+        padding: 16px 0px;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.6s ease;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin: 0.5rem;
+
+        a {
+          padding: 0px 40px;
+          text-decoration: none;
+          display: inline-block;
+        }
+      }
+
+      .btn-view-products[b-lnkmsgul51] {
+        background-color: #b80a25;
+        border: none;
+
+        a {
+          color: #fff;
+        }
+
+        &:hover[b-lnkmsgul51] {
+          background-color: #9d051c;
+          transform: translateY(-7px);
+        }
+
+        &:active[b-lnkmsgul51] {
+          transform: translateY(-1px);
+        }
+      }
+
+      .btn-learn-more[b-lnkmsgul51] {
+        background-color: transparent;
+        border: 2px solid #fff;
+        margin-left: 20px;
+
+        a {
+          color: #fff;
+        }
+
+        &:hover[b-lnkmsgul51] {
+          background-color: #fff;
+          transform: translateY(-7px);
+
+          a {
+            color: #000;
+          }
+        }
+
+        &:active[b-lnkmsgul51] {
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .hero-content[b-lnkmsgul51] {
+      padding: 0px 150px;
+
+      .hero-title {
+        font-size: 58px;
+      }
+
+      .hero-subtitle[b-lnkmsgul51] {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero-content[b-lnkmsgul51] {
+      padding: 0px 100px;
+
+      .hero-title {
+        font-size: 48px;
+      }
+
+      .hero-subtitle[b-lnkmsgul51] {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content[b-lnkmsgul51] {
+      padding: 0px 40px;
+
+      .hero-title {
+        font-size: 36px;
+      }
+
+      .hero-subtitle[b-lnkmsgul51] {
+        font-size: 15px;
+      }
+    }
+
+    .hero-buttons[b-lnkmsgul51] {
+      flex-direction: column;
+
+      .btn-learn-more {
+        margin-left: 0 !important; 
+      }
+
+      .btn-view-products[b-lnkmsgul51],
+      .btn-learn-more[b-lnkmsgul51] {
+        width: 100%;
+        max-width: 280px;
+
+        a {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero-content[b-lnkmsgul51] {
+      padding: 0px 20px;
+
+      .hero-title {
+        font-size: 28px;
+      }
+
+      .hero-subtitle[b-lnkmsgul51] {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .hero-content[b-lnkmsgul51] {
+      padding: 0px 10px;
+
+      .hero-title {
+        font-size: 24px;
+      }
+
+      .hero-subtitle[b-lnkmsgul51] {
+        font-size: 13px;
+      }
+    }
+
+    .btn-view-products[b-lnkmsgul51],
+    .btn-learn-more[b-lnkmsgul51] {
+      font-size: 14px;
+    }
+  }
+}

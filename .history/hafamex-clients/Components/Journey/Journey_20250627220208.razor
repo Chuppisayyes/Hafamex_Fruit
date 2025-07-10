@@ -1,0 +1,37 @@
+<section>
+    <div class="journey-container">
+        <h1 class="journey-title">Our Journey</h1>
+        <div class="journey-list">
+            @foreach (var item in Timeline)
+            {
+            <div class="journey-item">
+                <div class="journey-year">
+                <span>@item.Year</span>
+                </div>
+                <div class="journey-content">
+                <h4 class="journey-heading">@item.Title</h4>
+                <p class="journey-description">@item.Description</p>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>
+
+@code {
+  class TimelineItem
+  {
+    public string Year { get; set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
+  }
+
+  private List<TimelineItem> Timeline = new()
+  {
+    new TimelineItem { Year = "2008", Title = "Company Founded", Description = "Started as a small family farm in Mekong Delta" },
+    new TimelineItem { Year = "2012", Title = "First Export", Description = "Began exporting to Southeast Asian markets" },
+    new TimelineItem { Year = "2016", Title = "International Certification", Description = "Achieved GlobalGAP and HACCP certifications" },
+    new TimelineItem { Year = "2020", Title = "Factory Expansion", Description = "Opened new processing facility with modern technology" },
+    new TimelineItem { Year = "2024", Title = "Global Reach", Description = "Now exporting to 25+ countries worldwide" }
+  };
+}

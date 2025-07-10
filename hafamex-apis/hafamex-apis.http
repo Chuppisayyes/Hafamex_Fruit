@@ -1,0 +1,6 @@
+@hafamex_apis_HostAddress = http://localhost:5116
+
+GET {{hafamex_apis_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

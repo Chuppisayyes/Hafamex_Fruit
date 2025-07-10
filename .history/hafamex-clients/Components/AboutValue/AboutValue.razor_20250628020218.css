@@ -1,0 +1,75 @@
+.section--small {
+  width: 100vw;
+  background: #ffd4de;
+  background: linear-gradient(
+    100deg,
+    rgba(255, 212, 222, 1) 0%,
+    rgba(255, 213, 199, 1) 51%,
+    rgba(255, 224, 161, 1) 100%
+  );
+}
+
+.value {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 100px;
+    .value-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 50px 40px;
+      width: 300px;
+      height: 420px;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+      .value-card__icon {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        i {
+          color: #fff;
+        }
+      }
+      .icon-target {
+        background-color: #b80a25;
+        i {
+          font-size: 30px;
+        }
+      }
+      .icon-eye {
+        background-color: #17a34a;
+        i {
+          font-size: 30px;
+        }
+      }
+      .icon-users {
+        background-color: #eab403;
+        i {
+          font-size: 28px;
+        }
+      }
+      .value-card__title {
+        margin: 20px 0px;
+        font-size: 26px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+      }
+      .value-card__text {
+        text-align: center;
+      }
+    }
+  }
+}

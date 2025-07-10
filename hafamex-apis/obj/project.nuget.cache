@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "++4IRJOX2iE=",
+  "success": true,
+  "projectFilePath": "E:\\Source\\hafamex-apis\\hafamex-apis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.7\\microsoft.aspnetcore.openapi.9.0.7.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

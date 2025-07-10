@@ -1,0 +1,61 @@
+<div id="hf-menu-fixed" @(isOverFooter ? "footer-mode" : "")">
+    <ul>
+        <li class="hf-phone">
+            <a href="tel:0375225229" class="hf-circle">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <span class="sub-text-phone">Hotline: <span>+84 375 225 229</span></span>
+        </li>
+        <li class="hf-zalo">
+            <a href="https://zalo.me/0375225229" target="_blank" rel="nofollow" class="hf-circle">
+                <img src="https://hoangphatfruit.com/skins/default/images/zalo.png" alt="text-zalo-to-us">
+            </a>
+            <span class="sub-text">
+                <a href="https://zalo.me/0375225229" target="_blank" rel="nofollow">Zalo</a>
+            </span>
+        </li>
+        <li class="hf-whatsapp">
+            <a href="https://web.whatsapp.com/" target="_blank" rel="nofollow" class="hf-circle">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <span class="sub-text">
+                <a href="" target="_blank" rel="nofollow">Whatsapp</a>
+            </span>
+        </li>
+        <li class="hf-wechat">
+            <a href="https://web.whatsapp.com/" class="hf-circle" target="_blank" rel="nofollow">
+                <i class="fa-brands fa-weixin"></i>
+            </a>
+            <span class="sub-text">
+                <a href="" target="_blank" rel="nofollow">Wechat</a>
+            </span>
+        </li>
+        <li class="back-to-top">
+            <a class="hf-circle" href="#">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+            <span class="sub-text"><a href="#">Back to top</a></span>
+        </li>
+    </ul>
+</div>
+
+@code {
+    private bool isOverFooter = false;
+
+    [Inject] IJSRuntime JS { get; set; } = default!;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("observeFooter", "footer", DotNetObjectReference.Create(this));
+        }
+    }
+
+    [JSInvokable]
+    public void OnFooterVisible(bool visible)
+    {
+        isOverFooter = visible;
+        StateHasChanged();
+    }
+}

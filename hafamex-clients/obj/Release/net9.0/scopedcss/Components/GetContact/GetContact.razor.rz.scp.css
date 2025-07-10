@@ -1,0 +1,272 @@
+
+
+
+.get-contact[b-ztfdtmnmt6] {
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    padding: 40px 20px 60px 20px;
+    text-align: center;
+    height: 100vh;
+    .container{
+        .main-title{
+            h1{
+                box-sizing: border-box;
+                border: none;
+                outline: none;
+                font-size:48px;
+                font-weight: 600;
+                color: #B80A25 ;
+            }
+        }
+        .loader[b-ztfdtmnmt6] {
+    
+          display: flex;
+          justify-content: center;
+          margin: 50px 0px;
+          .absolute {
+            position: absolute;
+          }
+      
+          .inline-block[b-ztfdtmnmt6] {
+            display: inline-block;
+          }
+      
+          .w-2[b-ztfdtmnmt6] {
+            width: 0.5em;
+          }
+      
+          .dash[b-ztfdtmnmt6] {
+            animation: dashArray-b-ztfdtmnmt6 2s ease-in-out infinite,
+              dashOffset-b-ztfdtmnmt6 2s linear infinite;
+          }
+      
+          .spin[b-ztfdtmnmt6] {
+            animation: spinDashArray-b-ztfdtmnmt6 2s ease-in-out infinite,
+              spin-b-ztfdtmnmt6 8s ease-in-out infinite,
+              dashOffset-b-ztfdtmnmt6 2s linear infinite;
+            transform-origin: center;
+          }
+        }
+      
+        .contact-form-card[b-ztfdtmnmt6] {
+            background: transparent;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .info-us{
+                background-color: white;
+                min-height: 500px;
+                width: 40%;
+                padding: 40px 30px;
+                text-align: left;
+                border-radius: 16px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                font-family: 'Poppins', sans-serif;
+                .company-name{
+                    color: #B80A25;
+                    font-weight: 600;
+                }
+                .info[b-ztfdtmnmt6]{
+                    padding: 20px 10px 10px 30px;
+                    .address, .phone-number, .email-address{
+                        gap: 10px;
+                        display: flex;
+                        h5{
+                            font-weight: 600;
+                            font-size: 16px;
+                        }   
+                        i[b-ztfdtmnmt6]{
+                            color: #B80A25;
+                        }
+                    }
+                    p[b-ztfdtmnmt6]{
+                        font-size: 12px;
+                    }
+                }
+            }
+            form[b-ztfdtmnmt6] {
+                background-color: white;
+                margin-left: 50px;
+                min-height: 500px;
+                width: 60%;
+                padding: 20px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border-radius: 16px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                .form-title {
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    color: #B80A25;
+                }
+                .form-row[b-ztfdtmnmt6] {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                    .form-group {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'Poppins', sans-serif;
+                        label {
+                            font-weight: 600;
+                            font-size: 14px;
+                            text-align: left;
+                            margin-bottom: 8px;
+                        }
+                        input[b-ztfdtmnmt6], textarea[b-ztfdtmnmt6] {
+                            padding: 12px 16px;
+                            border: 1px solid #ccc;
+                            border-radius: 15px;
+                            font-size: 14px;
+                            transition: all 0.3s ease;
+                            &:focus {
+                                border-color: #8e44ad;
+                                box-shadow: 0 0 0 3px rgba(142, 68, 173, 0.2);
+                                outline: none;
+                            }
+                        }
+            
+                        textarea[b-ztfdtmnmt6] {
+                            resize: vertical;
+                        }
+                    }
+                }
+                .ft-form[b-ztfdtmnmt6]{
+                    margin-top: 10px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .submit-btn {
+                        width: 200px;
+                        height: 50px;
+                        border: none;
+                        border-radius: 45px;
+                        padding: 10px 20px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        position: relative;
+                        overflow: hidden;
+                        transition: all 0.5s ease-in-out;
+                        border: 1px solid #B80A25;
+
+                        &:hover {
+                            box-shadow: .5px .5px 150px #252525;
+                        }
+                    }
+                    .type1[b-ztfdtmnmt6]::after {
+                        content: "Thanks";
+                        background-color: #B80A25;
+                        color: #fff;
+                        width: 200px;
+                        height: 50px;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        transform: translateY(50px);
+                        font-size: 14px;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.5s ease-in-out;
+                      }
+                      
+                      .type1[b-ztfdtmnmt6]::before {
+                        content: "Send Request";
+                        background-color: #fff;
+                        color: #B80A25;
+                        width: 200px;
+                        height: 50px;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        transform: translateY(0px) scale(1.2);
+                        font-weight: 600;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.5s ease-in-out;
+                      }
+                      
+                      .type1:hover[b-ztfdtmnmt6]::after {
+                        transform: translateY(0) scale(1.2);
+                      }
+                      
+                      .type1:hover[b-ztfdtmnmt6]::before {
+                        transform: translateY(-50px) scale(0) rotate(120deg);
+                      }
+                }
+        
+            }
+        }
+    }
+  }
+    @keyframes gradientMove-b-ztfdtmnmt6 {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+  
+    @keyframes dashArray-b-ztfdtmnmt6 {
+        0% {
+        stroke-dasharray: 0 1 359 0;
+        }
+        50% {
+        stroke-dasharray: 0 359 1 0;
+        }
+        100% {
+        stroke-dasharray: 359 1 0 0;
+        }
+    }
+  
+    @keyframes spinDashArray-b-ztfdtmnmt6 {
+        0% {
+        stroke-dasharray: 270 90;
+        }
+        50% {
+        stroke-dasharray: 0 360;
+        }
+        100% {
+        stroke-dasharray: 270 90;
+        }
+    }
+  
+    @keyframes dashOffset-b-ztfdtmnmt6 {
+        0% {
+        stroke-dashoffset: 365;
+        }
+        100% {
+        stroke-dashoffset: 5;
+        }
+    }
+    
+    @keyframes spin-b-ztfdtmnmt6 {
+        0% {
+        rotate: 0deg;
+        }
+        12.5%, 25% {
+        rotate: 270deg;
+        }
+        37.5%, 50% {
+        rotate: 540deg;
+        }
+        62.5%, 75% {
+        rotate: 810deg;
+        }
+        87.5%, 100% {
+        rotate: 1080deg;
+        }
+    }
+  
+
+
+
+

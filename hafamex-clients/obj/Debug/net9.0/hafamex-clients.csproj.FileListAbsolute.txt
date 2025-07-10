@@ -30,10 +30,12 @@ E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\FreshFruit\Fresh
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\FreshVegetable\FreshVegetable.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\GetContact\GetContact.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\Header\Header.razor.rz.scp.css
+E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\Journey\Journey.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\Map\Map.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\MenuFixed\MenuFixed.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\ModalQuickView\ModalQuickView.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\PremiumFreshFruit\PremiumFreshFruit.razor.rz.scp.css
+E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\Process\Process.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\ProductBanner\ProductBanner.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\ProductCard\ProductCard.razor.rz.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\ProductHeader.razor\ProductHeader.razor.rz.scp.css
@@ -52,7 +54,7 @@ E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Pages\Product\ProductPage.r
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\bundle\hafamex-clients.styles.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\projectbundle\hafamex-clients.bundle.scp.css
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\raa8419rum-8qij0y2dsa.gz
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\u6q24wx1or-0mmnn3yi2p.gz
+E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\xlzxaie6gv-eh2sw4s8q2.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\fbsx0z42hp-1xz42r08xo.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\rdf34g3tgs-bqjiyaj88i.gz
 E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\igc1d0u4wh-c2jlpeoesf.gz
@@ -111,6 +113,9 @@ E:\Source\hafamex-clients\obj\Debug\net9.0\refint\hafamex-clients.dll
 E:\Source\hafamex-clients\obj\Debug\net9.0\hafamex-clients.pdb
 E:\Source\hafamex-clients\obj\Debug\net9.0\hafamex-clients.genruntimeconfig.cache
 E:\Source\hafamex-clients\obj\Debug\net9.0\ref\hafamex-clients.dll
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\xlzxaie6gv-ka88hqk74a.gz
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\baq8ctmubs-d2dztg8bcv.gz
-E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\ee2j129e2l-l7sfrqgai3.gz
+E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\AboutHero\AboutHero.razor.rz.scp.css
+E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\AboutStory\AboutStory.razor.rz.scp.css
+E:\Source\hafamex-clients\obj\Debug\net9.0\scopedcss\Components\AboutValue\AboutValue.razor.rz.scp.css
+E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\u6q24wx1or-ms8fh6ttk0.gz
+E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\baq8ctmubs-q5t6rjlqvm.gz
+E:\Source\hafamex-clients\obj\Debug\net9.0\compressed\ee2j129e2l-wnw1v05kug.gz

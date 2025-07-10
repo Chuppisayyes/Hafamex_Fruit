@@ -1,0 +1,26 @@
+.story {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    .story-content {
+      width: 40%;
+      .story-title {
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    .story-image {
+      width: 60%;
+      padding: 100px;
+      img {
+        width: 700px;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<section class="process">
+    <div class="process-container">
+        <h1 class="process-title">
+            Factory & Technology
+        </h1>
+        <p class="subtitle-process">
+            From seed to shelf, our comprehensive process ensures the highest quality standards at every step
+        </p>
+        <div class="process-list">
+            @for (int i = 0; i < Processlist.Count; i++)
+            {
+                var delay = 0.2 * i;
+                <div class="process-item animate__animated" data-animate="animate__fadeInUp"
+                    style="animation-delay:@($"{delay}s"); animation-duration: 1s;">
+                    <div class="process-img">
+                        <img src="@Processlist[i].ProcessImg" alt="@Processlist[i].ProcessTitle">
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+@code {
+    class ProcessItem
+    {
+        public string ProcessImg { get; set; } = string.Empty;
+        public string ProcessTitle { get; set; } = string.Empty;
+        public string ProcessSubtitle { get; set; } = string.Empty;
+    }
+    private List<ProcessItem> Processlist = new(){
+new ProcessItem{ProcessImg="https://i.postimg.cc/0kDNLmgg/DSC04044.jpg", ProcessTitle = "Expert Harvesting",
+ProcessSubtitle="Trained staff ensure optimal harvest timing"},
+new ProcessItem{ProcessImg="https://i.postimg.cc/YtPq08MK/DSC04328.jpg", ProcessTitle = "Quality Control",
+ProcessSubtitle="Rigorous testing at every stage of production"},
+new ProcessItem{ProcessImg="https://i.postimg.cc/V1FfnzmF/DSC04331.jpg", ProcessTitle = "Modern Processing",
+ProcessSubtitle="State-of-the-art facilities with climate control"},
+new ProcessItem{ProcessImg="https://i.postimg.cc/7wsqtXCG/DSC03865.jpg", ProcessTitle = "Sustainable Farming",
+ProcessSubtitle="Organic cultivation following international standards"},
+new ProcessItem{ProcessImg="https://i.postimg.cc/dqdv1Y5r/DSC04454.jpg", ProcessTitle = "Global Export",
+ProcessSubtitle="Efficient logistics to markets worldwide"}
+};
+}

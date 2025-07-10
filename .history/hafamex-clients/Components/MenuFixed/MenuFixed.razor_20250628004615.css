@@ -1,0 +1,122 @@
+#hf-menu-fixed {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 6;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+
+    .hf-phone {
+      a {
+        background-color: #b80a25 !important;
+        animation: rotate 0.2s ease-in-out infinite;
+      }
+      .sub-text-phone {
+        position: absolute;
+        /* // Đặt bên trái nút */
+        left: -300px;
+        top: 50%;
+        /* // Căn giữa dọc */
+        transform: translateY(-50%);
+        background-color: #000;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        opacity: 0;
+        text-decoration: none;
+
+        transition: opacity 0.2s ease;
+        /* // Ngăn chặn tương tác với sub text  */
+        pointer-events: none;
+      }
+      &:hover {
+        .sub-text-phone {
+          opacity: 1;
+        }
+      }
+    }
+    .hf-phone,
+    .hf-zalo,
+    .hf-whatsapp,
+    .hf-wechat,
+    .back-to-top {
+      margin-bottom: 0px;
+      position: relative;
+      .hf-circle {
+        background-color: #b80a25;
+        border: none;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+          object-fit: contain;
+        }
+
+        i {
+          font-size: 16px;
+        }
+      }
+      /* // Sub text (ẩn mặc định) */
+      .sub-text {
+        position: absolute;
+        /* // Đặt bên trái nút */
+        left: -110px;
+        top: 50%;
+        /* // Căn giữa dọc */
+        transform: translateY(-50%);
+        background-color: #000;
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        /* // Ngăn chặn tương tác với sub text  */
+        pointer-events: none;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+
+      /* // Hiện sub text khi hover */
+      &:hover span.sub-text {
+        opacity: 1;
+      }
+    }
+  }
+  &.footer-mode {
+    background-color: black;
+    color: white;
+  }
+}
+/* Định nghĩa animation rotate */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

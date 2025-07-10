@@ -1,0 +1,177 @@
+@using hafamex_clients.Models
+@inject NavigationManager Navigation
+
+<section class="product-list" id="product-list">
+    <div class="container">
+        <h1 class="poppins-600 animate__animated" data-animate="animate__fadeInDown">Our Products</h1>
+        <p class="poppins-400 animate__animated" data-animate="animate__fadeInDown">
+            Discover our finest selection of fresh tropical fruits, carefully hand-picked for quality and taste.
+        </p>
+        <div class="list-product-item">
+            <div class="grid-product animate__animated animate__slow" data-animate="animate__fadeInUp">
+                @foreach (var product in FruitProducts)
+                {
+                    <a class="product-item" href="/product-detail/@product.Slug">
+                        <img src="@product.Image" alt="@product.Name" />
+                        <div class="overlay">
+                            <div class="float-content">
+                                <div class="logo-title">@product.Name</div>
+                                <div class="product-rating">
+                                    @for (int i = 1; i <= 5; i++)
+                                    {
+                                        if (i <= Math.Floor(product.Rating))
+                                        {
+                                            <i class="fa-solid fa-star"></i>
+                                        }
+                                        else if (i - product.Rating == 0.5)
+                                        {
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        }
+                                    }
+                                </div>
+                                <div class="logo-desc">@product.Description</div>
+                            </div>
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+        <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <button class="btn-get-more">
+                    <NavLink href="/product-browse">Watch More</NavLink>
+                </button>
+            </div>
+        </div>
+</section>
+@code {
+    private Random random = new();
+    private List<Product> FruitProducts = new List<Product>()
+    {
+    
+    new Product() {
+        Id = "1",
+        Name = "White Dragon Fruit",
+        Slug = "white-dragon-fruit",
+        Image = "https://i.postimg.cc/x8QWMTMs/White-Dragon-Fruit.png",
+        Status = "in-stock",
+        Description = "Sweet and refreshing white-fleshed dragon fruit, rich in antioxidants.",
+        FullDescription = "White dragon fruit is known for its unique flavor and high antioxidant content, making it both delicious and nutritious.",
+        Category = "fresh-fruit",
+        Rating = 5.0,
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/ae/59/70/ae5970699e088d24ba7253522aa20d7c.jpg",
+            "https://i.pinimg.com/736x/ae/59/70/ae5970699e088d24ba7253522aa20d7c.jpg",
+            "https://i.pinimg.com/736x/0e/40/98/0e409805abc866770d6294bab1872392.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "2",
+        Name = "Red Dragon Fruit",
+        Slug = "red-dragon-fruit",
+        Image = "https://i.postimg.cc/XvRMNgJ6/Red-Dragon-Fruit.png",
+        Status = "in-stock",
+        Description = "Vibrant red dragon fruit with juicy, nutrient-packed flesh.",
+        FullDescription = "Red dragon fruit offers vibrant color and sweet-tangy flavor, packed with vitamins and antioxidants.",
+        Category = "fresh-fruit",
+        Rating = 5.0,
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/70/3b/19/703b19b5e348c3e6e9c7380aaed2b678.jpg",
+            "https://i.pinimg.com/736x/cd/f4/83/cdf48348e9cb6b5429982408244df76e.jpg",
+            "https://i.pinimg.com/736x/d9/c1/e1/d9c1e1b9a193fe2c171ec7f6b4c5e590.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "3",
+        Name = "Seedless Limes",
+        Slug = "seedless-limes",
+        Image = "https://i.postimg.cc/KzB61gkk/Seedless-Limes.png",
+        Status = "in-stock",
+        Description = "Fresh, seedless limes perfect for drinks, cooking, and desserts.",
+        FullDescription = "Seedless limes deliver pure citrus flavor ideal for cocktails, cooking, and garnishes without the hassle of seeds.",
+        Category = "fresh-fruit",
+        Rating = 5.0,
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/4d/b9/2b/4db92be2f9c7cfb3b9d0dc338f1855cb.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "4",
+        Name = "Green Pomelo",
+        Slug = "green-pomelo",
+        Image = "https://i.postimg.cc/bwFcWPfJ/Green-Pomelo.png",
+        Status = "in-stock",
+        Description = "Juicy pomelo with sweet and slightly tangy flavor.",
+        FullDescription = "Green pomelo is a Vietnamese specialty, offering sweet and juicy flesh perfect for fresh consumption or desserts.",
+        Category = "fresh-fruit",
+        Rating = 5.0,
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/03/32/59/0332593c4edbbebc607fa827fe419bc0.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "5",
+        Name = "Longan",
+        Slug = "longan",
+        Image = "https://i.postimg.cc/vHbs6XvQ/Longan.png",
+        Status = "in-stock",
+        Description = "Fragrant longan fruits with translucent, sweet flesh.",
+        FullDescription = "Longan, known as 'dragon's eye,' is loved for its translucent flesh and rich, honey-like sweetness.",
+        Category = "fresh-fruit",
+        Rating = 5.0,
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/21/c4/ab/21c4ab35ab154cb87e053ac00a1d0543.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "6",
+        Name = "Passion Fruit",
+        Slug = "passion-fruit",
+        Image = "https://i.postimg.cc/RZ0xgF8y/Passion-Fruit.png",
+        Status = "in-stock",
+        Description = "Tropical passion fruit with tangy, aromatic pulp inside.",
+        FullDescription = "Passion fruit is prized for its intensely aromatic pulp and perfect balance of sweetness and tartness.",
+        Category = "fresh-fruit",
+        Rating = 5.0,
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/9b/83/2a/9b832ac3a3d1db25f7cf5d31e9f0c44a.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "7",
+        Name = "Mango",
+        Slug = "mango",
+        Image = "https://i.postimg.cc/02nqGmt7/Mango.png",
+        Status = "in-stock",
+        Description = "Juicy, sun-ripened mangoes bursting with tropical sweetness.",
+        FullDescription = "Mangoes are one of Vietnam's most beloved fruits, known for their tropical fragrance and sweet juicy flesh.",
+        Category = "fresh-fruit",
+        Rating = 5.0,
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/7d/57/44/7d57448fbd1c0f187645d9b4fae3dc4f.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "8",
+        Name = "Young Coconut",
+        Slug = "young-coconut",
+        Image = "https://i.postimg.cc/s2QdRL3J/Young-Coconut.png",
+        Status = "in-stock",
+        Description = "Fresh young coconut with naturally sweet, hydrating water.",
+        FullDescription = "Young coconuts are refreshing, naturally sweet, and rich in electrolytes, perfect for hydration.",
+        Category = "fresh-fruit",
+        Rating = 5.0,
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/02/f2/df/02f2dfbdd0704a66e42607f5cf3886b3.jpg"
+        }
+    }
+    };
+}

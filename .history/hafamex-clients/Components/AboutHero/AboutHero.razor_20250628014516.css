@@ -1,0 +1,23 @@
+.section--large {
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://i.postimg.cc/JhNnJS34/DJI-20250423070305-0036-D.jpg");
+  background-repeat: inherit;
+  background-size: cover;
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  .container{
+    position: relative;
+    z-index: 10;
+  }
+}
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: max-content;
+}

@@ -1,0 +1,30 @@
+﻿@page "/"
+@using Microsoft.JSInterop
+@inject IJSRuntime JS
+@using hafamex_clients.Components.CarouselPlayer
+@using hafamex_clients.Components.Carousel
+@using hafamex_clients.Components.ProductList
+@using hafamex_clients.Components.Slogan
+@using hafamex_clients.Components.AlbumHome
+@using hafamex_clients.Components.FactoryAndFarm
+@using hafamex_clients.Components.Certificate
+@using hafamex_clients.Components.Map
+
+<Carousel/>
+<CarouselPlayer/>
+<ProductList />
+<Slogan />
+<AlbumHome/>
+<FactoryAndFarm/>
+<Certificate />
+<Map />
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initializeCountup");
+        }
+    }
+}

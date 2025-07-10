@@ -1,0 +1,38 @@
+.process {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .process-container {
+    /* max-width: 1200px; */
+    padding: 0 100px;
+    text-align: center;
+    .process-title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      color: #1f2937;
+    }
+    .subtitle-process {
+      font-size: 18px;
+      font-weight: 400;
+      color: grey;
+    }
+    .process-list {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      .process-item {
+        border-radius: 15px;
+        .process-img {
+          img {
+            border-radius: 15px;
+            height: auto;
+            width: 250px;
+          }
+        }
+        .process-item-title{
+            margin: 20px 0px;
+        }
+      }
+    }
+  }
+}

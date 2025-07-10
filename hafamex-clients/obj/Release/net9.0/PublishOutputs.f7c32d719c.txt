@@ -1,0 +1,9 @@
+E:\Source\hafamex-clients\publish\hafamex-clients.exe
+E:\Source\hafamex-clients\publish\appsettings.Development.json
+E:\Source\hafamex-clients\publish\appsettings.json
+E:\Source\hafamex-clients\publish\hafamex-clients.dll
+E:\Source\hafamex-clients\publish\hafamex-clients.deps.json
+E:\Source\hafamex-clients\publish\hafamex-clients.runtimeconfig.json
+E:\Source\hafamex-clients\publish\hafamex-clients.pdb
+E:\Source\hafamex-clients\publish\Blazored.Modal.dll
+E:\Source\hafamex-clients\publish\Microsoft.JSInterop.WebAssembly.dll

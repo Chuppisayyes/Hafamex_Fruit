@@ -1,0 +1,232 @@
+@page "/product-detail/{ProductSlug}"
+@using hafamex_clients.Components.ProductBanner
+@using hafamex_clients.Components.ProductCard
+@using hafamex_clients.Models
+
+<ProductBanner />
+
+@{
+var allProducts = FruitProducts.Concat(VegetableProducts).ToList();
+var product = allProducts.FirstOrDefault(p => p.Slug == ProductSlug);
+}
+
+@if (product != null)
+{
+<section class="product-detail">
+    <div class="container">
+        <div class="product-image">
+            <img src="@product.Image" alt="@product.Slug" class="img-fluid">
+            @* <div class="product-img-related">
+                @foreach (var image in product.ImageRelated)
+                {
+                    <img src="@image" alt="@product.Name" class="img-fluid" />
+                }
+            </div> *@
+        </div>
+        <div class="product-info">
+            <h1 class="product-title">@product.Name</h1>
+            <p class="product-full-description">@product.FullDescription</p>
+            <p class="product-category">@product.Category</p>
+            <div class="product-status">@product.Status</div>
+            <button class="btn btn-primary"></button>
+        </div>
+    </div>
+</section>
+
+<section class="related-products">
+    <hr>
+    <div class="container">
+        <h2>Related Products</h2>
+        <div class="products-grid">
+            @foreach (var p in FruitProducts)
+            {
+                <ProductCard Product="@p" />
+            }
+        </div>
+    </div>
+</section>
+}
+else
+{
+    <p>Product not found.</p>
+}
+
+@code {
+    [Parameter] public string? ProductSlug { get; set; } = string.Empty;
+    private List<Product> FruitProducts = new List<Product>()
+    {
+    
+    new Product() {
+        Id = "1",
+        Name = "White Dragon Fruit",
+        Slug = "white-dragon-fruit",
+        Image = "https://i.postimg.cc/x8QWMTMs/White-Dragon-Fruit.png",
+        Status = "in-stock",
+        Description = "Sweet and refreshing white-fleshed dragon fruit, rich in antioxidants.",
+        FullDescription = "White dragon fruit is known for its unique flavor and high antioxidant content, making it both delicious and nutritious.",
+        Category = "fresh-fruit",
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/ae/59/70/ae5970699e088d24ba7253522aa20d7c.jpg",
+            "https://i.pinimg.com/736x/ae/59/70/ae5970699e088d24ba7253522aa20d7c.jpg",
+            "https://i.pinimg.com/736x/0e/40/98/0e409805abc866770d6294bab1872392.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "2",
+        Name = "Red Dragon Fruit",
+        Slug = "red-dragon-fruit",
+        Image = "https://i.postimg.cc/XvRMNgJ6/Red-Dragon-Fruit.png",
+        Status = "in-stock",
+        Description = "Vibrant red dragon fruit with juicy, nutrient-packed flesh.",
+        FullDescription = "Red dragon fruit offers vibrant color and sweet-tangy flavor, packed with vitamins and antioxidants.",
+        Category = "fresh-fruit",
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/70/3b/19/703b19b5e348c3e6e9c7380aaed2b678.jpg",
+            "https://i.pinimg.com/736x/cd/f4/83/cdf48348e9cb6b5429982408244df76e.jpg",
+            "https://i.pinimg.com/736x/d9/c1/e1/d9c1e1b9a193fe2c171ec7f6b4c5e590.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "3",
+        Name = "Seedless Limes",
+        Slug = "seedless-limes",
+        Image = "https://i.postimg.cc/KzB61gkk/Seedless-Limes.png",
+        Status = "in-stock",
+        Description = "Fresh, seedless limes perfect for drinks, cooking, and desserts.",
+        FullDescription = "Seedless limes deliver pure citrus flavor ideal for cocktails, cooking, and garnishes without the hassle of seeds.",
+        Category = "fresh-fruit",
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/4d/b9/2b/4db92be2f9c7cfb3b9d0dc338f1855cb.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "4",
+        Name = "Green Pomelo",
+        Slug = "green-pomelo",
+        Image = "https://i.postimg.cc/bwFcWPfJ/Green-Pomelo.png",
+        Status = "in-stock",
+        Description = "Juicy pomelo with sweet and slightly tangy flavor.",
+        FullDescription = "Green pomelo is a Vietnamese specialty, offering sweet and juicy flesh perfect for fresh consumption or desserts.",
+        Category = "fresh-fruit",
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/03/32/59/0332593c4edbbebc607fa827fe419bc0.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "5",
+        Name = "Longan",
+        Slug = "longan",
+        Image = "https://i.postimg.cc/vHbs6XvQ/Longan.png",
+        Status = "in-stock",
+        Description = "Fragrant longan fruits with translucent, sweet flesh.",
+        FullDescription = "Longan, known as 'dragon's eye,' is loved for its translucent flesh and rich, honey-like sweetness.",
+        Category = "fresh-fruit",
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/21/c4/ab/21c4ab35ab154cb87e053ac00a1d0543.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "6",
+        Name = "Passion Fruit",
+        Slug = "passion-fruit",
+        Image = "https://i.postimg.cc/RZ0xgF8y/Passion-Fruit.png",
+        Status = "in-stock",
+        Description = "Tropical passion fruit with tangy, aromatic pulp inside.",
+        FullDescription = "Passion fruit is prized for its intensely aromatic pulp and perfect balance of sweetness and tartness.",
+        Category = "fresh-fruit",
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/9b/83/2a/9b832ac3a3d1db25f7cf5d31e9f0c44a.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "7",
+        Name = "Mango",
+        Slug = "mango",
+        Image = "https://i.postimg.cc/02nqGmt7/Mango.png",
+        Status = "in-stock",
+        Description = "Juicy, sun-ripened mangoes bursting with tropical sweetness.",
+        FullDescription = "Mangoes are one of Vietnam's most beloved fruits, known for their tropical fragrance and sweet juicy flesh.",
+        Category = "fresh-fruit",
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/7d/57/44/7d57448fbd1c0f187645d9b4fae3dc4f.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "8",
+        Name = "Young Coconut",
+        Slug = "young-coconut",
+        Image = "https://i.postimg.cc/s2QdRL3J/Young-Coconut.png",
+        Status = "in-stock",
+        Description = "Fresh young coconut with naturally sweet, hydrating water.",
+        FullDescription = "Young coconuts are refreshing, naturally sweet, and rich in electrolytes, perfect for hydration.",
+        Category = "fresh-fruit",
+        ImageRelated = new List<string>() {
+            "https://i.pinimg.com/736x/02/f2/df/02f2dfbdd0704a66e42607f5cf3886b3.jpg"
+        }
+    }
+    };
+    private List<Product> VegetableProducts = new List<Product>()
+{
+    new Product() {
+        Id = "1",
+        Name = "Beetroot",
+        Slug = "beetroot",
+        Image = "https://i.postimg.cc/FHzwj6kQ/Beetroot.png",
+        Status = "in-stock",
+        Description = "Fresh beetroot rich in essential vitamins and minerals.",
+        FullDescription = "Beetroot is a nutrient-dense root vegetable known for its vibrant red color and earthy flavor. It's packed with folate, manganese, potassium, iron, and vitamin C, supporting heart health and reducing inflammation.",
+        Category = "fresh-vegetable",
+        Rating = 4.5,
+        ImageRelated = new List<string>() 
+        {
+            "https://i.pinimg.com/736x/6d/7d/f1/6d7df1b093b4cf39b173d305ecdc2a47.jpg",
+            "https://i.pinimg.com/736x/ab/5f/3a/ab5f3a7609e8a6fcb2b8c77ad299bcf4.jpg",
+            "https://i.pinimg.com/736x/8e/53/12/8e53125f908aa438d3976a52fba3993b.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "2",
+        Name = "Carrot",
+        Slug = "carrot",
+        Image = "https://i.postimg.cc/9Xt3VZHs/Carrot.png",
+        Status = "in-stock",
+        Description = "Crunchy, sweet carrots rich in beta-carotene and fiber.",
+        FullDescription = "Carrots are a popular root vegetable, excellent for vision health due to their high beta-carotene content, which converts into vitamin A. They're also rich in antioxidants, fiber, and promote digestive and skin health.",
+        Category = "fresh-vegetable",
+        Rating = 5.0,
+        ImageRelated = new List<string>() 
+        {
+            "https://i.pinimg.com/736x/f3/1c/41/f31c41cd94064e68c76319b8fc22ae8a.jpg",
+            "https://i.pinimg.com/736x/fb/56/04/fb56042b35de2df9ffbe85ac0c46dc95.jpg",
+            "https://i.pinimg.com/736x/67/e3/bf/67e3bf7e1727f71b45afc917c66c4f45.jpg"
+        }
+    },
+
+    new Product() {
+        Id = "3",
+        Name = "Sweet Potato",
+        Slug = "sweet-potato",
+        Image = "https://i.postimg.cc/BQMdP36g/Sweet-Potato.png",
+        Status = "in-stock",
+        Description = "Naturally sweet, nutrient-rich sweet potatoes.",
+        FullDescription = "Sweet potatoes are a versatile superfood loaded with fiber, potassium, vitamins A, C, and E. They support gut health, provide stable energy, and have a naturally sweet, satisfying flavor perfect for baking, roasting, or boiling.",
+        Category = "fresh-vegetable",
+        Rating = 4.5,
+        ImageRelated = new List<string>() 
+        {
+            "https://i.pinimg.com/736x/25/1c/e7/251ce7755484dbcf36512e364f765ad4.jpg",
+            "https://i.pinimg.com/736x/7d/2a/bb/7d2abbf89960c57fdc9060db7b94784e.jpg",
+            "https://i.pinimg.com/736x/aa/b7/b8/aab7b8d6ac6c21c6ccf7e01f52eb5080.jpg"
+        }
+    }
+};
+
+}

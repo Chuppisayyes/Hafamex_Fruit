@@ -1,0 +1,117 @@
+@page "/about"
+@page "/ve-chung-toi"
+@using Microsoft.AspNetCore.Components.Routing
+@using hafamex_clients.Components.Journey
+<section
+    class="about-section section--large hero flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="container animate__animated" data-animate="animate__fadeInDown">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                From Farm to <br><span class="highlight">Global Market</span>
+            </h1>
+            <p class="hero-subtitle">
+                Premium Vietnamese agricultural products exported worldwide with international quality standards
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-view-products">
+                    <a href="/product">View Our Products</a>
+                </button>
+                <button class="btn-learn-more">
+                    <NavLink href="#">Learn More</NavLink>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    class="about-section story section--dark vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+    <div class="container animate__animated" data-animate="animate__fadeInDown">
+        <div class="story-content">
+            <h1 class="story-title">Our story</h1>
+            <p class="story-phrase-first">
+                Founded in 2008, GreenExport has grown from a small local farm to one of Vietnam's most trusted
+                agricultural
+                export companies. We specialize in tropical fruits, vegetables, and processed agricultural products
+                that
+                meet the highest international standards.
+            </p>
+            <p class="story-phrase-first">
+                Our commitment to sustainable farming practices and cutting-edge technology has earned us
+                certifications
+                from major international bodies and partnerships with leading retailers worldwide.
+            </p>
+        </div>
+        <div class="story-image">
+            <img src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Our farm" class="rounded-2xl shadow-xl" />
+        </div>
+    </div>
+</section>
+<section
+    class="about-section value section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="value-card">
+            <div class="value-card__icon icon-target">
+                <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h4 class="value-card__title">Mission</h4>
+            <p class="value-card__text">
+                To deliver the finest Vietnamese agricultural products to global markets while supporting local
+                farmers and sustainable practices.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="value-card__icon icon-eye">
+                <i class="fa-regular fa-eye"></i>
+            </div>
+            <h4 class="value-card__title">Vision</h4>
+            <p class="value-card__text">
+                To become the leading agricultural export company in Southeast Asia, known for quality, innovation,
+                and sustainability.
+            </p>
+        </div>
+
+        <div class="value-card">
+            <div class="value-card__icon icon-users">
+                <i class="fa-solid fa-users-rays"></i>
+            </div>
+            <h4 class="value-card__title">Values</h4>
+            <p class="value-card__text">
+                Quality, integrity, sustainability, and innovation guide every decision we make in our journey to
+                excellence.
+            </p>
+        </div>
+    </div>
+</section>
+<Journey />
+
+<section class="process">
+    <div class="process-container">
+        <h1 class="process-title">
+            Factory & Technology
+        </h1>
+        <p class="subtitle-process">
+            From seed to shelf, our comprehensive process ensures the highest quality standards at every step
+        </p>
+        <div class="process-list">
+            <div class="process-item">
+                <div class="process-img">
+                    <img src="" alt="">
+                </div>
+                <h5 class="process-item-title">Sustainable Farming</h5>
+                <p class="process-item-subtitle">Organic cultivation following international standards</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+@code{
+    class ProcessItem{
+        public string ProcessImg {get; set;} = string.Empty;
+        public string ProcessTitle {get; set;} = string.Empty;
+        public string ProcessSubtitle {get; set;} = string.Empty;
+    }
+}
+
+private List<Pr
